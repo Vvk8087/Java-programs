@@ -58,15 +58,42 @@ public class Practiceset_3 {
 //		}
 		
 //		4) Write a java program to find whether year entered by the user is a leap year or not
-		System.out.println("Enter a year to check whether it is leap year or not: ");
-		int year = ip.nextInt();
-		if(year%400==0 || (year%100!=0 && year%4==0)) {
-			System.out.println("This is a leap year");
+//		System.out.println("Enter a year to check whether it is leap year or not: ");
+//		int year = ip.nextInt();
+//		if(year%400==0 || (year%100!=0 && year%4==0)) {
+//			System.out.println("This is a leap year");
+//		
+//		}
+//		else {
+//			System.out.println("This is not a leap year");
+//		}
 		
+		System.out.println("Enter your annual income in lakhs");
+		float inc = ip.nextFloat();
+		float tax = 0;
+		if(inc<=2.5f) {
+			tax=tax+0;
 		}
-		else {
-			System.out.println("This is not a leap year");
+		else if(inc>=2.5f && inc<=5f) {
+			tax=tax+0.05f*(inc-2.5f);
 		}
+		else if(inc>=5f && inc<=10f) {
+			tax=tax+0.05f*(5f-2.5f);
+			tax=tax+0.2f*(inc-2.5f);
+		}
+		else if(inc>=5f && inc<=10f) {
+			tax=tax+0.05f*(5f-2.5f);
+			
+		}
+		else if(inc>10f) {
+			tax=tax+0.05f*(5f-2.5f);
+			tax=tax+0.2f*(10f-5f);
+			tax=tax+0.2f*(inc-10f);
+		}
+		System.out.println("You have to pay "+tax+" lakh Rs. on your income");
+		
+		
+
 	}
 	
 
