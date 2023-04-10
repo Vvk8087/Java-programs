@@ -92,7 +92,7 @@ public class Practiceset_3 {
 		}
 		System.out.println("You have to pay "+tax+" lakh Rs. on your income");
 		
-		
+		//comment
 
 	}
 	
